@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webiste title</title>
+    <!-- @include 'fonts/fontawesome.kit' -->
+    <!-- @include 'linkbootstrap441_css.kit' -->
+    <!-- @include 'linkcss.kit' -->
+</head>
+
+<body>
+
+    <!-- @include 'linkbootstrap441_js.kit' -->
+    <!-- @include 'linkjs.kit' -->
+    <script>
+        $(document).click(function (event) {
+            var clickover = $(event.target);
+            var _opened = $(".navbar-collapse").hasClass("show");
+            if (_opened === true && !clickover.hasClass("navbar-toggler")) {
+                $(".navbar-toggler").click();
+            }
+        });
+    </script>
+</body>
+
+</html>
